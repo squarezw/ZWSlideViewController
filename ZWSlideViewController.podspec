@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZWSlideViewController"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Easy to use and customizable slide page view controller for iOS"
 
   s.description      = <<-DESC
