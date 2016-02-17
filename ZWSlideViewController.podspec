@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = "A short description of ZWSlideViewController."
 
   s.description      = <<-DESC
+  This framework provides an easy to use class to show slide view controller, it combines a section bar and a segmented page. you can set any styles for section bar or page.
                        DESC
 
   s.homepage         = "https://github.com/squarezw/ZWSlideViewController"
