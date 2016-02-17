@@ -31,9 +31,11 @@
 
 #pragma mark - Events
 
-// Maybe you have a async loading data to callback the method
 - (void)switchStyle:(id)sender
 {
+    // if you have a asynchronous loading requests data to refresh the slide page
+//    self.menuTitles = @[@"Drama", @"Family", @"Fantasy", @"Thriller", @"Horror", @"Comedy"];
+    
     self.sectionBar.selectedTextColor = [UIColor blueColor];
     self.sectionBar.nomarlTextColor = [UIColor redColor];
     self.sectionBar.backgroundColor = [UIColor blackColor];
@@ -68,6 +70,16 @@
     
     return tableView;
 }
+
+// Example 2
+//- (UIView *)contentViewForPage:(ZWSPage *)page atIndex:(NSInteger)index
+//{
+//    UIView *view = [[UIView alloc] init];
+//    
+//    view.backgroundColor = [UIColor colorWithRed:0.5 green:0.1*index blue:0.2*index alpha:1];
+//    
+//    return view;
+//}
 
 #pragma mark - UITableViewDataSource
 

@@ -54,7 +54,6 @@
     
     if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.automaticallyAdjustsScrollViewInsets = NO;
     }
 }
 
@@ -85,10 +84,10 @@
 
 - (void)refreshViews
 {
-    _sectionBar.frame = CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.menuHeight);    
+    _sectionBar.frame = CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y, self.view.bounds.size.width, self.menuHeight);
     [self.view addSubview:_sectionBar];
     
-    _pagingView.frame = CGRectMake(0.0, self.sectionBar.frame.size.height, self.view.bounds.size.width, self.view.bounds.size.height - self.sectionBar.frame.size.height);
+    _pagingView.frame = CGRectMake(self.view.bounds.origin.x, self.sectionBar.frame.size.height, self.view.bounds.size.width, self.view.bounds.size.height - self.sectionBar.frame.size.height);
     [self.view insertSubview:_pagingView belowSubview:_sectionBar];
     
     [_pagingView reloadPages];

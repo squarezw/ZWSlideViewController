@@ -8,8 +8,6 @@
 
 #import "ZWSViewController.h"
 
-@import UIKit;
-
-@interface ZWViewController : ZWSViewController <ZWSPagingViewDataSource, ZWSPagingViewDelegate>
+@interface ZWViewController : ZWSViewController
 
 @end
