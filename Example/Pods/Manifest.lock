@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
+  - ZWSlideViewController (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ZWSlideViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ZWSlideViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  ZWSlideViewController: efba511224aaf41df1e564bda097ff79e613e9f9
+
+COCOAPODS: 0.37.2

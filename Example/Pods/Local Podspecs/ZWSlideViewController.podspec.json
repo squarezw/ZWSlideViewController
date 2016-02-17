@@ -1,0 +1,24 @@
+{
+  "name": "ZWSlideViewController",
+  "version": "0.1.0",
+  "summary": "A short description of ZWSlideViewController.",
+  "description": "",
+  "homepage": "https://github.com/squarezw/ZWSlideViewController",
+  "license": "MIT",
+  "authors": {
+    "square": "square.zhao.wei@gmail.com"
+  },
+  "source": {
+    "git": "git@bitbucket.org:squarezw/zwslideviewcontroller.git"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ZWSlideViewController": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ZWSlideViewController_Example', :exclusive => true do
+  pod "ZWSlideViewController", :path => "../"
+end
+
+target 'ZWSlideViewController_Tests', :exclusive => true do
+  pod "ZWSlideViewController", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
