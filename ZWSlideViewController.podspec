@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ZWSlideViewController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ZWSlideViewController."
+  s.summary          = "Easy to use and customizable slide page view controller for iOS"
 
   s.description      = <<-DESC
   This framework provides an easy to use class to show slide view controller, it combines a section bar and a segmented page. you can set any styles for section bar or page.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.screenshots      = "https://github.com/squarezw/ZWSlideViewController/raw/master/screenshot.gif"
   s.license          = 'MIT'
   s.author           = { "square" => "square.zhao.wei@gmail.com" }
-  s.source           = { :git => "git@github.com:squarezw/ZWSlideViewController.git" }
+  s.source           = { :git => "https://github.com/squarezw/ZWSlideViewController.git", :tag => "#{s.version}" }
   
   s.platform     = :ios, '7.0'
   s.requires_arc = true
