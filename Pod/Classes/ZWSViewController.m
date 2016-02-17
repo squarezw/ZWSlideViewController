@@ -55,15 +55,9 @@
     if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-}
-
-- (void)viewWillLayoutSubviews
-{
+    
     [self loadData];
-}
-
-- (void)viewDidLayoutSubviews
-{
+    
     [self refreshViews];
 }
 
