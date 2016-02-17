@@ -93,7 +93,7 @@ Take a look at the Example project to see how to use customization using more
 
 ## Author
 
-square, square.zhao.wei@gmail.com
+[@squarezw](https://github.com/squarezw) , [@lamo](https://github.com/Lamod)
 
 ## License
 
