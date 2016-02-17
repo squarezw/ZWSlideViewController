@@ -16,7 +16,7 @@ pod "ZWSlideViewController"
 
 ## Screenshots
 
-
+![Screenshot](https://github.com/squarezw/ZWSlideViewController/blob/master/screenshot.gif)
 
 ## Usage
 
