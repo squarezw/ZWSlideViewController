@@ -18,6 +18,11 @@ pod "ZWSlideViewController"
 
 ![Screenshot](https://github.com/squarezw/ZWSlideViewController/blob/master/screenshot.gif)
 
+
+<a href='https://appetize.io/embed/jjm3gvqp5175yeae2n8kdbx0pc' alt='Live demo'>
+    <img width="50" height="60" src="demo.png"/>
+</a>
+
 ## Usage
 
 To show slide page use the following code:
