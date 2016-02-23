@@ -10,8 +10,8 @@
 
 @implementation ZWSSectionBar
 
-@synthesize selectedTextColor = _selectedTextColor;
-@synthesize nomarlTextColor = _nomarlTextColor;
+@synthesize highlightedTextColor = _highlightedTextColor;
+@synthesize textColor = _textColor;
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -26,20 +26,20 @@
     return self;
 }
 
-- (UIColor *)nomarlTextColor
+- (UIColor *)textColor
 {
-    if (!_nomarlTextColor) {
+    if (!_textColor) {
         return [UIColor grayColor];
     }
-    return _nomarlTextColor;
+    return _textColor;
 }
 
-- (UIColor *)selectedTextColor
+- (UIColor *)highlightedTextColor
 {
-    if (!_selectedTextColor) {
+    if (!_highlightedTextColor) {
         return [UIColor redColor];
     }
-    return _selectedTextColor;
+    return _highlightedTextColor;
 }
 
 - (UIFont *)nomarlTextFont
@@ -58,19 +58,23 @@
     return _selectedTextFont;
 }
 
-- (void)setSelectedTextColor:(UIColor *)selectedTextColor
+- (void)setHighlightedTextColor:(UIColor *)highlightedTextColor
 {
-    _selectedTextColor = selectedTextColor;
-    for (ZWSMenuLabel *item in self.items) {
-        item.selectedColor = _selectedTextColor;
+    _highlightedTextColor = highlightedTextColor;
+    for (id item in self.items) {
+        if ([item isKindOfClass:[UILabel class]]) {
+            ((UILabel *)item).highlightedTextColor = _highlightedTextColor;
+        }
     }
 }
 
-- (void)setNomarlTextColor:(UIColor *)nomarlTextColor
+- (void)setTextColor:(UIColor *)textColor
 {
-    _nomarlTextColor = nomarlTextColor;
-    for (ZWSMenuLabel *item in self.items) {
-        item.textColor = _nomarlTextColor;
+    _textColor = textColor;
+    for (id item in self.items) {
+        if ([item isKindOfClass:[UILabel class]]) {
+            ((UILabel *)item).textColor = _textColor;
+        }
     }
 }
 
@@ -88,7 +92,7 @@
         UIView *iv = [[UIView alloc] initWithFrame:CGRectMake(.0, .0, 2.0, 10.0)];
         UIView *lv = [[UIView alloc] initWithFrame:CGRectMake(.0, 8.0, 2.0, 2.0)];
         iv.userInteractionEnabled = NO;
-        lv.backgroundColor = self.selectedTextColor;
+        lv.backgroundColor = self.highlightedTextColor;
         lv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         [iv addSubview:lv];
 
@@ -113,13 +117,22 @@
 }
 
 - (UIView *)itemForTitle:(NSString *)title {
-    ZWSMenuLabel *item = [ZWSMenuLabel new];
-    item.selectedColor  = self.selectedTextColor;
-    item.textColor = self.nomarlTextColor;
-    item.selectedFont = self.selectedTextFont;
-    item.font = self.nomarlTextFont;
-    item.backgroundColor = [UIColor clearColor];
-    item.text = title;
+    UIView *item;
+    
+    if (self.barDelegate && [self.barDelegate respondsToSelector:@selector(menuItemWithTitle:)]) {
+        item = [self.barDelegate performSelector:@selector(menuItemWithTitle:) withObject:title];
+    }
+    
+    if (!item) {
+        ZWSMenuLabel *itemLabel = [ZWSMenuLabel new];
+        itemLabel.highlightedTextColor  = self.highlightedTextColor;
+        itemLabel.textColor = self.textColor;
+        itemLabel.highlightedFont = self.selectedTextFont;
+        itemLabel.font = self.nomarlTextFont;
+        itemLabel.backgroundColor = [UIColor clearColor];
+        itemLabel.text = title;
+        item = itemLabel;
+    }
     [self resizeItem:item];
     
     if (self.barDelegate && [self.barDelegate respondsToSelector:@selector(didCreateItemView:)]) {
@@ -146,7 +159,9 @@
 
 - (void)resizeItem:(UIView *)item {
     if (CGSizeEqualToSize(self.itemSize, CGSizeZero)) {
-        [item sizeToFit];
+        if ([item isKindOfClass:[UILabel class]]) {
+            [item sizeToFit];
+        }
     } else {
         CGSize size = [item sizeThatFits:self.itemSize];
         size.width = MAX(size.width, self.itemSize.width);

@@ -54,17 +54,24 @@
         x = _menuInsets.left;
     }
 
-    for (ZWSMenuLabel *v in _items) {
+    for (UIView *v in _items) {
         v.center = CGPointMake(x + CGRectGetWidth(v.frame) / 2.0, CGRectGetHeight(self.frame) / 2.0);
         [self addSubview:v];
 
         if ([_items indexOfObject:v] == _selectedIndex) {
-            [v transformColor:1.0];
-
+            
+            if ([v conformsToProtocol:@protocol(ZWSMenuAppearance)]
+                && [v respondsToSelector:@selector(transformToHighlight)]) {
+                [(id<ZWSMenuAppearance>)v transformToHighlight];
+            }
+            
             _indicatorView.center = v.center;
             _indicatorView.bounds = CGRectMake(.0, .0, CGRectGetWidth(v.frame), CGRectGetHeight(self.frame));
         } else {
-            [v transformColor:.0];
+            if ([v conformsToProtocol:@protocol(ZWSMenuAppearance)]
+                && [v respondsToSelector:@selector(transformToNormal)]) {
+                [(id<ZWSMenuAppearance>)v transformToNormal];
+            }
         }
 
         x += CGRectGetWidth(v.frame) + gap;
@@ -123,7 +130,7 @@
     NSAssert([self indexIsValid:selectedIndex], @"");
     NSAssert([self indexIsValid:_selectedIndex], @"");
     
-    ZWSMenuLabel *v = _items[selectedIndex];
+    UIView *v = _items[selectedIndex];
     CGFloat offsetX = v.center.x - CGRectGetWidth(self.frame) / 2.0;
 
     if (offsetX < -self.contentInset.left) {
@@ -137,8 +144,15 @@
     _indicatorView.center = v.center;
     _indicatorView.bounds = CGRectMake(.0, .0, CGRectGetWidth(v.frame), CGRectGetHeight(self.frame));
 
-    [_items[_selectedIndex] transformColor:.0];
-    [v transformColor:1.0];
+    if ([_items[_selectedIndex] conformsToProtocol:@protocol(ZWSMenuAppearance)]
+        && [_items[_selectedIndex] respondsToSelector:@selector(transformToNormal)]) {
+        [(id<ZWSMenuAppearance>)_items[_selectedIndex] transformToNormal];
+    }
+    
+    if ([v conformsToProtocol:@protocol(ZWSMenuAppearance)]
+        && [v respondsToSelector:@selector(transformToHighlight)]) {
+        [(id<ZWSMenuAppearance>)v transformToHighlight];
+    }
 
     _selectedIndex = selectedIndex;
 }
@@ -240,14 +254,21 @@
 
     NSInteger nextIndex = offset >= .0 ? _selectedIndex + 1 : _selectedIndex - 1;
 
-    ZWSMenuLabel *currItem = _items[_selectedIndex],
+    UIView *currItem = _items[_selectedIndex],
            *nextItem = [self indexIsValid:nextIndex] ? _items[nextIndex] : nil;
 
     CGRect f = [self frameForIndicatorViewWithFloatIndex:floatIndex];
     _indicatorView.frame = f;
 
-    [currItem transformColor:1 - fabsf(offset)];
-    [nextItem transformColor:fabsf(offset)];
+    if ([currItem conformsToProtocol:@protocol(ZWSMenuAppearance)]
+        && [currItem respondsToSelector:@selector(transformPercent:)]) {
+        [(id<ZWSMenuAppearance>)currItem transformPercent:1 - fabsf(offset)];
+    }
+    
+    if ([nextItem conformsToProtocol:@protocol(ZWSMenuAppearance)]
+        && [nextItem respondsToSelector:@selector(transformPercent:)]) {
+        [(id<ZWSMenuAppearance>)nextItem transformPercent:fabsf(offset)];
+    }
 
     CGFloat offsetX = CGRectGetMidX(f) - CGRectGetWidth(self.frame) / 2;
     if (offsetX < -self.contentInset.left) {

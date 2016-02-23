@@ -27,20 +27,15 @@ static float (^mix)(float a, float b, float p) = ^float(float a, float b, float 
     return self;
 }
 
-- (void)setSelectedColor:(UIColor *)selectedColor
+- (void)setHighlightedFont:(UIFont *)highlightedFont
 {
-    _selectedColor = selectedColor;
-}
-
-- (void)setSelectedFont:(UIFont *)selectedFont
-{
-    _selectedFont = selectedFont;
+    _highlightedFont = highlightedFont;
 }
 
 - (void)transformColor:(float)progress
 {
-    NSAssert(self.selectedColor, @"You should setting selectedFont!");
-    if (!self.selectedColor) {
+    NSAssert(self.highlightedTextColor, @"You should setting highlightedTextColor!");
+    if (!self.highlightedTextColor) {
         return;
     }
     
@@ -51,7 +46,7 @@ static float (^mix)(float a, float b, float p) = ^float(float a, float b, float 
     CGFloat fr, fg, fb, fa;
     [self.originFrontColor getRed:&fr green:&fg blue:&fb alpha:&fa];
     CGFloat tr, tg, tb, ta;
-    [self.selectedColor getRed:&tr green:&tg blue:&tb alpha:&ta];
+    [self.highlightedTextColor getRed:&tr green:&tg blue:&tb alpha:&ta];
     
     self.textColor = [UIColor colorWithRed:mix(fr, tr, progress)
                                      green:mix(fg, tg, progress)
@@ -61,15 +56,30 @@ static float (^mix)(float a, float b, float p) = ^float(float a, float b, float 
 
 - (void)transformFont:(float)progress
 {
-    NSAssert(self.selectedFont, @"You should setting selectedFont!");
-    if (!self.selectedFont) {
+    NSAssert(self.highlightedFont, @"You should setting highlightedFont!");
+    if (!self.highlightedFont) {
         return;
     }
 
     if (!self.originFont) {
         self.originFont = [self.font copy];
     }
-    self.font = [UIFont systemFontOfSize:mix(self.originFont.pointSize, self.selectedFont.pointSize, progress)];
+    self.font = [UIFont systemFontOfSize:mix(self.originFont.pointSize, self.highlightedFont.pointSize, progress)];
+}
+
+- (void)transformToNormal
+{
+    [self transformColor:.0];
+}
+
+- (void)transformToHighlight
+{
+    [self transformColor:1.0];
+}
+
+- (void)transformPercent:(float)progressPercent
+{
+    [self transformColor:progressPercent];
 }
 
 @end

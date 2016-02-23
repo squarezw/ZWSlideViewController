@@ -4,6 +4,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ZWSFlowMenu.h"
+#import "ZWSMenuLabel.h"
 
 @protocol ZWSSectionBarDelegate;
 
@@ -12,8 +13,8 @@
     NSArray *_titles;
 }
 
-@property (nonatomic, strong) UIColor *nomarlTextColor; // Default: grayColor
-@property (nonatomic, strong) UIColor *selectedTextColor; // Default: redColor
+@property (nonatomic, strong) UIColor *textColor; // Default: grayColor
+@property (nonatomic, strong) UIColor *highlightedTextColor; // Default: redColor
 
 @property (nonatomic, strong) UIFont *nomarlTextFont; // Default: 14.0f
 @property (nonatomic, strong) UIFont *selectedTextFont; // Default: 15.0f
@@ -34,5 +35,7 @@
 - (void)sectionBar:(ZWSSectionBar *)sectionBar didSelectAtInedx:(NSUInteger)index;
 
 - (void)didCreateItemView:(UIView *)itemView;
+
+- (UIView *)menuItemWithTitle:(NSString *)title;
 
 @end

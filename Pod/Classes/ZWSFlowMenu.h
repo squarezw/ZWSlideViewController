@@ -3,7 +3,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZWSMenuLabel.h"
 
 #define ZWStructWith(_Origin_, _Path_, _Value_) \
     ({                                          \
@@ -35,5 +34,17 @@
 - (NSInteger)indexOfItemContainsPoint:(CGPoint)point;
 
 - (BOOL)indexIsValid:(NSInteger)index;
+
+@end
+
+@protocol ZWSMenuAppearance <NSObject>
+
+@optional
+
+- (void)transformToNormal;
+
+- (void)transformToHighlight;
+
+- (void)transformPercent:(float)progressPercent;
 
 @end

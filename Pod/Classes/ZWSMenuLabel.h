@@ -3,11 +3,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZWSFlowMenu.h"
 
-@interface ZWSMenuLabel : UILabel
+@interface ZWSMenuLabel : UILabel <ZWSMenuAppearance>
 
-@property (nonatomic, strong) UIColor *selectedColor;
-@property (nonatomic, strong) UIFont *selectedFont;
+@property (nonatomic, strong) UIFont *highlightedFont;
 
 - (void)transformColor:(float)progress;
 
