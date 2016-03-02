@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ZWSlideViewController.svg?style=flat)](http://cocoapods.org/pods/ZWSlideViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ZWSlideViewController.svg?style=flat)](http://cocoapods.org/pods/ZWSlideViewController)
 
+`ZWSlideViewController` is a view controller container that manages a customizable sliding views and menus.
+
 ## From CocoaPods
 
 ZWSlideViewController is available through [CocoaPods](http://cocoapods.org). To install
