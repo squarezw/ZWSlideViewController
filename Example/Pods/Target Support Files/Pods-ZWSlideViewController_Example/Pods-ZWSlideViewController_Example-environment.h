@@ -10,5 +10,5 @@
 #define COCOAPODS_POD_AVAILABLE_ZWSlideViewController
 #define COCOAPODS_VERSION_MAJOR_ZWSlideViewController 0
 #define COCOAPODS_VERSION_MINOR_ZWSlideViewController 1
-#define COCOAPODS_VERSION_PATCH_ZWSlideViewController 0
+#define COCOAPODS_VERSION_PATCH_ZWSlideViewController 2
 

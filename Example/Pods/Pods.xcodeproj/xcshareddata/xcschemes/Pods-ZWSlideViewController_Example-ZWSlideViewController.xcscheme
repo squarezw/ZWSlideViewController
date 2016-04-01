@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE9494936FBC1EF5B55C3E6C"
+               BlueprintIdentifier = "097EBB19548294B1106CBBD3"
                BuildableName = "ZWSlideViewController.framework"
                BlueprintName = "Pods-ZWSlideViewController_Example-ZWSlideViewController"
                ReferencedContainer = "container:Pods.xcodeproj">
