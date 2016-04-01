@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) UIColor *textColor; // Default: grayColor
 @property (nonatomic, strong) UIColor *highlightedTextColor; // Default: redColor
+@property (nonatomic, assign) CGFloat indicatorHeight; // Default: 2px
 
 @property (nonatomic, strong) UIFont *nomarlTextFont; // Default: 14.0f
 @property (nonatomic, strong) UIFont *selectedTextFont; // Default: 15.0f

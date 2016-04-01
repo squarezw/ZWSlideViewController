@@ -90,7 +90,7 @@
         }
         
         UIView *iv = [[UIView alloc] initWithFrame:CGRectMake(.0, .0, 2.0, 10.0)];
-        UIView *lv = [[UIView alloc] initWithFrame:CGRectMake(.0, 8.0, 2.0, 2.0)];
+        UIView *lv = [[UIView alloc] initWithFrame:CGRectMake(.0, iv.bounds.size.height - (self.indicatorHeight?:2), 2.0, self.indicatorHeight?:2)];
         iv.userInteractionEnabled = NO;
         lv.backgroundColor = self.highlightedTextColor;
         lv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
@@ -131,6 +131,7 @@
         itemLabel.font = self.nomarlTextFont;
         itemLabel.backgroundColor = [UIColor clearColor];
         itemLabel.text = title;
+        itemLabel.textAlignment = NSTextAlignmentCenter;
         item = itemLabel;
     }
     [self resizeItem:item];

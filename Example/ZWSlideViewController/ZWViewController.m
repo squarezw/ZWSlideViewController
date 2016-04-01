@@ -39,6 +39,7 @@
     self.sectionBar.highlightedTextColor = [UIColor blueColor];
     self.sectionBar.textColor = [UIColor redColor];
     self.sectionBar.backgroundColor = [UIColor blackColor];
+    self.sectionBar.indicatorHeight = 5.0f;
     self.menuHeight = 64.0f;
     
     self.useTransform3DEffects = YES;
