@@ -92,7 +92,7 @@
         UIView *iv = [[UIView alloc] initWithFrame:CGRectMake(.0, .0, 2.0, 10.0)];
         UIView *lv = [[UIView alloc] initWithFrame:CGRectMake(.0, iv.bounds.size.height - (self.indicatorHeight?:2), 2.0, self.indicatorHeight?:2)];
         iv.userInteractionEnabled = NO;
-        lv.backgroundColor = self.highlightedTextColor;
+        lv.backgroundColor = self.indicatorColor?:self.highlightedTextColor;
         lv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         [iv addSubview:lv];
 
