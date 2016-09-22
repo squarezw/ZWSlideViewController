@@ -52,9 +52,7 @@
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self loadData];
     

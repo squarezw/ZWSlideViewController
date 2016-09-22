@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZWSlideViewController"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "Easy to use and customizable slide page view controller for iOS"
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.author           = { "square" => "square.zhao.wei@gmail.com" }
   s.source           = { :git => "https://github.com/squarezw/ZWSlideViewController.git", :tag => "#{s.version}" }
   
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
