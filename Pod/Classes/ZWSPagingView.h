@@ -39,6 +39,9 @@
 @property(nonatomic, readonly) ZWSPage *centerPage;
 @property(nonatomic, readonly) NSSet *visiblePages;
 
+// it will be pre-fetched content and cached for next page
+@property(nonatomic, getter=isPreload) BOOL preload;
+
 - (NSUInteger)indexOfPage:(ZWSPage *)page;
 - (NSUInteger)indexOfCenterPage;
 

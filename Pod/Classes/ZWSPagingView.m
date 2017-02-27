@@ -15,6 +15,7 @@
 - (void)commonInit {
     _visiblePages = [[NSMutableSet alloc] init];
     _recycledPages = [[NSMutableSet alloc] init];
+    _preload = NO;
 
     self.pagingEnabled = YES;
     self.showsVerticalScrollIndicator = NO;
@@ -220,12 +221,16 @@
     }
 
     [_visiblePages minusSet:_recycledPages];
+    
+    NSNumber *cachePageIndex;
 
+    if (_preload && (firstNeededPageIndex != lastNeededPageIndex)) {
+        cachePageIndex = @(lastNeededPageIndex);
+    }
+    
     NSArray *indexes = [NSArray arrayWithObjects:@(firstNeededPageIndex),
-                                                 (firstNeededPageIndex == lastNeededPageIndex)
-                                                     ? nil
-                                                     : @(lastNeededPageIndex),
-                                                 nil];
+                   cachePageIndex,
+                   nil];
 
     for (NSNumber *number in indexes) {
         NSUInteger i = number.unsignedIntegerValue;
