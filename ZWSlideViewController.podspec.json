@@ -1,6 +1,6 @@
 {
   "name": "ZWSlideViewController",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "Easy to use and customizable slide page view controller for iOS",
   "homepage": "https://github.com/squarezw/ZWSlideViewController",
   "license": {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/squarezw/ZWSlideViewController.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "source_files": "Pod/Classes/**/*",
   "requires_arc": true
