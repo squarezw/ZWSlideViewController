@@ -1,6 +1,6 @@
 # ZWSlideViewController
 
-[![CI Status](http://img.shields.io/travis/square/ZWSlideViewController.svg?style=flat)](https://travis-ci.org/square/ZWSlideViewController)
+[![CI Status](http://img.shields.io/travis/squarezw/ZWSlideViewController.svg?style=flat)](https://travis-ci.org/squarezw/ZWSlideViewController)
 [![Version](https://img.shields.io/cocoapods/v/ZWSlideViewController.svg?style=flat)](http://cocoapods.org/pods/ZWSlideViewController)
 [![License](https://img.shields.io/cocoapods/l/ZWSlideViewController.svg?style=flat)](http://cocoapods.org/pods/ZWSlideViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ZWSlideViewController.svg?style=flat)](http://cocoapods.org/pods/ZWSlideViewController)
