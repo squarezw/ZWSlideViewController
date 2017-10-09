@@ -1,0 +1,6 @@
+framework module ZWSlideViewController {
+  umbrella header "ZWSlideViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

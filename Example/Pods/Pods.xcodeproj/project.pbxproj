@@ -7,394 +7,319 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F5EF785403DB04512F60D82 /* ZWSPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A361674FBB2F68132F0693 /* ZWSPagingView.m */; };
-		41329BE7B0A80D2BE306F6DC /* ZWSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C698DA9F4B49B248D91E620D /* ZWSViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		430DC4C3CFF3D2FF1AC9269A /* Pods-ZWSlideViewController_Example-ZWSlideViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8E6701FDB5B3918C800DB2 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48242F9E8DC975BD674F8243 /* ZWSPagingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BA0F777B993CC1935A727B /* ZWSPagingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5691BC8AFD23015B677A03BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B2148D32B762198D096B73 /* Foundation.framework */; };
-		657B0725672112337241BFFD /* ZWSSectionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2EEBF976A9980459E21B4A /* ZWSSectionBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		766B794BA872A9D94A54626F /* ZWSFlowMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A25293256B63B05B0B08F4 /* ZWSFlowMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C047A0506627036F6787C3C /* ZWSMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A4F6D3008D9DD4114CB3A /* ZWSMenuLabel.m */; };
-		94B77F2B5CF9B08438F529CF /* ZWSMenuLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4CDC22B05853381C3FA87D /* ZWSMenuLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A51E8E432C7A11681EE2D898 /* ZWSFlowMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D327D44A5A22554531CE13 /* ZWSFlowMenu.m */; };
-		A78EAF129F9B5D0CE9C79180 /* Pods-ZWSlideViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA648AD45BA7B83305A5C72F /* Pods-ZWSlideViewController_Example-dummy.m */; };
-		AC0B085EC99654596D011466 /* ZWSSectionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C35A65A3679CB1A607EA3204 /* ZWSSectionBar.m */; };
-		D6FC5BC2963856E10404A4D6 /* ZWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C88CCE080E6E510BAD261E /* ZWSViewController.m */; };
-		DB82E1E8D351963AC108E79E /* Pods-ZWSlideViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 941ED3A3CB1068B10D5E5A77 /* Pods-ZWSlideViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3884B3AA0E7A5F3754D04AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B2148D32B762198D096B73 /* Foundation.framework */; };
-		F4ACDFEE64C65A94323409BA /* Pods-ZWSlideViewController_Example-ZWSlideViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C07E4CFCCF514F8174A38 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-dummy.m */; };
+		0080B06A0ADBBC9D271E793A6E1055A9 /* ZWSFlowMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = F14342D03A042A62932F20D77A0F59B8 /* ZWSFlowMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C559C7E1CA3E0D9352CF83E226E3DA3 /* ZWSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F893D6C28F5B828E2DB62075A5633E9 /* ZWSViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AB46C960B368FEEF41FE598FD64CDD /* ZWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A73553A991CE9CECFB586708FE0F287 /* ZWSViewController.m */; };
+		35D1D2B5134C078F848A20D61E1E9292 /* ZWSMenuLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7632BAF434F13A6F8F23C3EE27AAAE66 /* ZWSMenuLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C5CFADCCFD5317943ABFAC22FBDE191 /* Pods-ZWSlideViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70756CC38FF547ED63E5AEFA81E7680A /* Pods-ZWSlideViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		530B8A7A2ED75F02979E02EF2020667A /* ZWSMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B3BC89AE6DEBDBA68EF3FAC8991A95 /* ZWSMenuLabel.m */; };
+		5EE33E0D3085F48DAA4E1BD5C2038220 /* ZWSlideViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6ABF7F550F0A98D8CBEA16F93D585A /* ZWSlideViewController-dummy.m */; };
+		600334FABDD3406097EA9840DF620069 /* ZWSSectionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A06AF584293A8B3624E731CAA44890 /* ZWSSectionBar.m */; };
+		720F4925B9B8C4BEB4CC59D82D292E03 /* ZWSPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A2233917C6CFA1C0D71EA23320921 /* ZWSPagingView.m */; };
+		78CC0DBB51A7F02890B4D66EE90579E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7D41D0BFA1453DE1E08AAAC8E74A3E1C /* Pods-ZWSlideViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE605E66C38A194CEB96BF151D0C4E7 /* Pods-ZWSlideViewController_Example-dummy.m */; };
+		85898D28D49A0A36E199480FF3907290 /* ZWSFlowMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5985A0EF356D5F8CEEA8CF62BE744913 /* ZWSFlowMenu.m */; };
+		9A89048F0DBF0C4740D6E5007A5DBDC7 /* ZWSlideViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8D12071734BF53C83E69F7C08881FF /* ZWSlideViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0BB4DC8761307A701F22EC3AE4D6B04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B2503BE21211A009BBAF25D0EADF641D /* ZWSPagingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDA6A9D028F3149A07D7DF45ABE5CCE /* ZWSPagingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7FFE85986DB28266B1DDFACA0504BCC /* ZWSSectionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D865D2A183CC15246F0B91CC18C01D6 /* ZWSSectionBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53EAF39474C650393A1DF30B /* PBXContainerItemProxy */ = {
+		34D0AFA689D82DEDEF1B032D470EC0AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BBA7BB3E215DD914908AB045 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 097EBB19548294B1106CBBD3;
-			remoteInfo = "Pods-ZWSlideViewController_Example-ZWSlideViewController";
+			remoteGlobalIDString = 078F5F2608D5624A602C00994E29ED72;
+			remoteInfo = ZWSlideViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FD6E1AA534BC42EFD8BB477 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12A31960C085A94614B21260 /* Pods-ZWSlideViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZWSlideViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1E8E6701FDB5B3918C800DB2 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZWSlideViewController_Example-ZWSlideViewController-umbrella.h"; sourceTree = "<group>"; };
-		25A25293256B63B05B0B08F4 /* ZWSFlowMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWSFlowMenu.h; sourceTree = "<group>"; };
-		2C4CDC22B05853381C3FA87D /* ZWSMenuLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWSMenuLabel.h; sourceTree = "<group>"; };
-		34861DD406A0455F373C91C4 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		388B68233975853F11CE3D23 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZWSlideViewController_Example-ZWSlideViewController-prefix.pch"; sourceTree = "<group>"; };
-		43B96A458CD61A43F76903EE /* Pods-ZWSlideViewController_Example-ZWSlideViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWSlideViewController_Example-ZWSlideViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		453A4F6D3008D9DD4114CB3A /* ZWSMenuLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWSMenuLabel.m; sourceTree = "<group>"; };
-		4DF94E82A535720D4AF0C92D /* Pods-ZWSlideViewController_Example-ZWSlideViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWSlideViewController_Example-ZWSlideViewController.xcconfig"; sourceTree = "<group>"; };
-		5371EFAB294D980A4C74FB35 /* Pods_ZWSlideViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZWSlideViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53B2148D32B762198D096B73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		596B192B309049C697816012 /* Pods-ZWSlideViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZWSlideViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F9B5BCB7E0A9438614637D2 /* Pods-ZWSlideViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWSlideViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		60C88CCE080E6E510BAD261E /* ZWSViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWSViewController.m; sourceTree = "<group>"; };
-		63FD600AEFECD1DFC189B9BB /* Pods-ZWSlideViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWSlideViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		73B9C44689A5E43C25DA1A4E /* Pods-ZWSlideViewController_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZWSlideViewController_Example-environment.h"; sourceTree = "<group>"; };
-		73F0BF724B50A06103633F66 /* Pods-ZWSlideViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWSlideViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		85BA0F777B993CC1935A727B /* ZWSPagingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWSPagingView.h; sourceTree = "<group>"; };
-		941ED3A3CB1068B10D5E5A77 /* Pods-ZWSlideViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZWSlideViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		A4A361674FBB2F68132F0693 /* ZWSPagingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWSPagingView.m; sourceTree = "<group>"; };
-		A693E948DC41091BEE8D25F7 /* Pods-ZWSlideViewController_Example-ZWSlideViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZWSlideViewController_Example-ZWSlideViewController.modulemap"; sourceTree = "<group>"; };
-		A98B1A3B33DDC313F58C9A22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C35A65A3679CB1A607EA3204 /* ZWSSectionBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWSSectionBar.m; sourceTree = "<group>"; };
-		C698DA9F4B49B248D91E620D /* ZWSViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWSViewController.h; sourceTree = "<group>"; };
-		C9D327D44A5A22554531CE13 /* ZWSFlowMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWSFlowMenu.m; sourceTree = "<group>"; };
-		CC2EEBF976A9980459E21B4A /* ZWSSectionBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWSSectionBar.h; sourceTree = "<group>"; };
-		D4C48B332DAC41E441E82B3B /* ZWSlideViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZWSlideViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95EB4C2CBB4E24FA0AD35FE /* Pods-ZWSlideViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZWSlideViewController_Example.modulemap"; sourceTree = "<group>"; };
-		E64C07E4CFCCF514F8174A38 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZWSlideViewController_Example-ZWSlideViewController-dummy.m"; sourceTree = "<group>"; };
-		F64A5699BF922D299EEEE79B /* Pods-ZWSlideViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWSlideViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FA648AD45BA7B83305A5C72F /* Pods-ZWSlideViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZWSlideViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		22394D36CF8E646E113CC3325BB5309F /* Pods-ZWSlideViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZWSlideViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		23B3BC89AE6DEBDBA68EF3FAC8991A95 /* ZWSMenuLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWSMenuLabel.m; path = Pod/Classes/ZWSMenuLabel.m; sourceTree = "<group>"; };
+		27CF763DC643F937688925827DA67CE8 /* Pods-ZWSlideViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZWSlideViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3357D255142957BF30B93E0D31C10A80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387DF0908872D8F4D01B328C09950F31 /* ZWSlideViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZWSlideViewController.framework; path = ZWSlideViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFEDBDD228A0013A111F96AD4DE03EE /* Pods_ZWSlideViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZWSlideViewController_Example.framework; path = "Pods-ZWSlideViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A73553A991CE9CECFB586708FE0F287 /* ZWSViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWSViewController.m; path = Pod/Classes/ZWSViewController.m; sourceTree = "<group>"; };
+		4CE605E66C38A194CEB96BF151D0C4E7 /* Pods-ZWSlideViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZWSlideViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		5985A0EF356D5F8CEEA8CF62BE744913 /* ZWSFlowMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWSFlowMenu.m; path = Pod/Classes/ZWSFlowMenu.m; sourceTree = "<group>"; };
+		61F087CA9141614063A97FFB14514CCE /* Pods-ZWSlideViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWSlideViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70756CC38FF547ED63E5AEFA81E7680A /* Pods-ZWSlideViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZWSlideViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		745058DDA378C83DD3B8853B2E15EEDE /* ZWSlideViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWSlideViewController-prefix.pch"; sourceTree = "<group>"; };
+		7632BAF434F13A6F8F23C3EE27AAAE66 /* ZWSMenuLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWSMenuLabel.h; path = Pod/Classes/ZWSMenuLabel.h; sourceTree = "<group>"; };
+		7E6A2233917C6CFA1C0D71EA23320921 /* ZWSPagingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWSPagingView.m; path = Pod/Classes/ZWSPagingView.m; sourceTree = "<group>"; };
+		7EDA6A9D028F3149A07D7DF45ABE5CCE /* ZWSPagingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWSPagingView.h; path = Pod/Classes/ZWSPagingView.h; sourceTree = "<group>"; };
+		7F893D6C28F5B828E2DB62075A5633E9 /* ZWSViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWSViewController.h; path = Pod/Classes/ZWSViewController.h; sourceTree = "<group>"; };
+		81702817565BC5227259FE8F12F2D8C8 /* Pods-ZWSlideViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZWSlideViewController_Example.modulemap"; sourceTree = "<group>"; };
+		83DE4C4410984D4218476F17798DF51B /* Pods-ZWSlideViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWSlideViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		86D125F18136E15554A1101024EDDF1E /* ZWSlideViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZWSlideViewController.modulemap; sourceTree = "<group>"; };
+		8D865D2A183CC15246F0B91CC18C01D6 /* ZWSSectionBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWSSectionBar.h; path = Pod/Classes/ZWSSectionBar.h; sourceTree = "<group>"; };
+		90E0D52016E8190D3573CFE38005C687 /* Pods-ZWSlideViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWSlideViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93FB54358BD4ABB54D428937C01F4B77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A06AF584293A8B3624E731CAA44890 /* ZWSSectionBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWSSectionBar.m; path = Pod/Classes/ZWSSectionBar.m; sourceTree = "<group>"; };
+		AA31EBA1DDF29F64DF5DBC0673678F2C /* Pods-ZWSlideViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWSlideViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CF8D12071734BF53C83E69F7C08881FF /* ZWSlideViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWSlideViewController-umbrella.h"; sourceTree = "<group>"; };
+		DA6ABF7F550F0A98D8CBEA16F93D585A /* ZWSlideViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWSlideViewController-dummy.m"; sourceTree = "<group>"; };
+		F14342D03A042A62932F20D77A0F59B8 /* ZWSFlowMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWSFlowMenu.h; path = Pod/Classes/ZWSFlowMenu.h; sourceTree = "<group>"; };
+		F5224412C51B8144A86F40ABF928E5D4 /* ZWSlideViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWSlideViewController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E18EF01D070345154913AC8 /* Frameworks */ = {
+		117B223D0F0D41789A0446DB40F2CB5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3884B3AA0E7A5F3754D04AE /* Foundation.framework in Frameworks */,
+				A0BB4DC8761307A701F22EC3AE4D6B04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57632509F691943D21BF5F26 /* Frameworks */ = {
+		E0EB1A96E917F21395FFD05AD436C9AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5691BC8AFD23015B677A03BB /* Foundation.framework in Frameworks */,
+				78CC0DBB51A7F02890B4D66EE90579E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DCBBD5B6691AFD8F07234DF /* Products */ = {
+		7B31D98EF37F1951F1A0E0CB03FA0A76 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5371EFAB294D980A4C74FB35 /* Pods_ZWSlideViewController_Example.framework */,
-				D4C48B332DAC41E441E82B3B /* ZWSlideViewController.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		410F5A69F67D70C627738D03 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E80503EF4E0D7C3F8A823A51 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		4412495509342F364922AFE0 = {
-			isa = PBXGroup;
-			children = (
-				34861DD406A0455F373C91C4 /* Podfile */,
-				8962972737C6E5DC1A6BFD6D /* Development Pods */,
-				A6C25B2C8E4DA60BB45E6C99 /* Frameworks */,
-				0DCBBD5B6691AFD8F07234DF /* Products */,
-				E6676DD2D386E3ABF3E1E3A3 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		6648AD4E95AFDF840C978079 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A98B1A3B33DDC313F58C9A22 /* Info.plist */,
-				A693E948DC41091BEE8D25F7 /* Pods-ZWSlideViewController_Example-ZWSlideViewController.modulemap */,
-				4DF94E82A535720D4AF0C92D /* Pods-ZWSlideViewController_Example-ZWSlideViewController.xcconfig */,
-				43B96A458CD61A43F76903EE /* Pods-ZWSlideViewController_Example-ZWSlideViewController-Private.xcconfig */,
-				E64C07E4CFCCF514F8174A38 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-dummy.m */,
-				388B68233975853F11CE3D23 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-prefix.pch */,
-				1E8E6701FDB5B3918C800DB2 /* Pods-ZWSlideViewController_Example-ZWSlideViewController-umbrella.h */,
+				93FB54358BD4ABB54D428937C01F4B77 /* Info.plist */,
+				86D125F18136E15554A1101024EDDF1E /* ZWSlideViewController.modulemap */,
+				F5224412C51B8144A86F40ABF928E5D4 /* ZWSlideViewController.xcconfig */,
+				DA6ABF7F550F0A98D8CBEA16F93D585A /* ZWSlideViewController-dummy.m */,
+				745058DDA378C83DD3B8853B2E15EEDE /* ZWSlideViewController-prefix.pch */,
+				CF8D12071734BF53C83E69F7C08881FF /* ZWSlideViewController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController";
+			path = "../Target Support Files/ZWSlideViewController";
 			sourceTree = "<group>";
 		};
-		84219995D350B481FD5F8052 /* ZWSlideViewController */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				410F5A69F67D70C627738D03 /* Pod */,
-				6648AD4E95AFDF840C978079 /* Support Files */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F0F5428469035A3D3B4376D32F7A43B0 /* Pods */,
+				EDCA4DBD1055F2ABDA5BA7EC1FF7D67A /* Products */,
+				9FD7E2DB3D0582A04D4471AD8F241789 /* Targets Support Files */,
 			);
-			name = ZWSlideViewController;
-			path = ../..;
 			sourceTree = "<group>";
 		};
-		8962972737C6E5DC1A6BFD6D /* Development Pods */ = {
+		9FD7E2DB3D0582A04D4471AD8F241789 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				84219995D350B481FD5F8052 /* ZWSlideViewController */,
+				D914A157473985618C0F6C11390E058C /* Pods-ZWSlideViewController_Example */,
 			);
-			name = "Development Pods";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A0240250B495671F3B4D8043 /* Pods-ZWSlideViewController_Example */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0FD6E1AA534BC42EFD8BB477 /* Info.plist */,
-				D95EB4C2CBB4E24FA0AD35FE /* Pods-ZWSlideViewController_Example.modulemap */,
-				596B192B309049C697816012 /* Pods-ZWSlideViewController_Example-acknowledgements.markdown */,
-				12A31960C085A94614B21260 /* Pods-ZWSlideViewController_Example-acknowledgements.plist */,
-				FA648AD45BA7B83305A5C72F /* Pods-ZWSlideViewController_Example-dummy.m */,
-				73B9C44689A5E43C25DA1A4E /* Pods-ZWSlideViewController_Example-environment.h */,
-				F64A5699BF922D299EEEE79B /* Pods-ZWSlideViewController_Example-frameworks.sh */,
-				5F9B5BCB7E0A9438614637D2 /* Pods-ZWSlideViewController_Example-resources.sh */,
-				941ED3A3CB1068B10D5E5A77 /* Pods-ZWSlideViewController_Example-umbrella.h */,
-				63FD600AEFECD1DFC189B9BB /* Pods-ZWSlideViewController_Example.debug.xcconfig */,
-				73F0BF724B50A06103633F66 /* Pods-ZWSlideViewController_Example.release.xcconfig */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D914A157473985618C0F6C11390E058C /* Pods-ZWSlideViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3357D255142957BF30B93E0D31C10A80 /* Info.plist */,
+				81702817565BC5227259FE8F12F2D8C8 /* Pods-ZWSlideViewController_Example.modulemap */,
+				27CF763DC643F937688925827DA67CE8 /* Pods-ZWSlideViewController_Example-acknowledgements.markdown */,
+				22394D36CF8E646E113CC3325BB5309F /* Pods-ZWSlideViewController_Example-acknowledgements.plist */,
+				4CE605E66C38A194CEB96BF151D0C4E7 /* Pods-ZWSlideViewController_Example-dummy.m */,
+				83DE4C4410984D4218476F17798DF51B /* Pods-ZWSlideViewController_Example-frameworks.sh */,
+				61F087CA9141614063A97FFB14514CCE /* Pods-ZWSlideViewController_Example-resources.sh */,
+				70756CC38FF547ED63E5AEFA81E7680A /* Pods-ZWSlideViewController_Example-umbrella.h */,
+				90E0D52016E8190D3573CFE38005C687 /* Pods-ZWSlideViewController_Example.debug.xcconfig */,
+				AA31EBA1DDF29F64DF5DBC0673678F2C /* Pods-ZWSlideViewController_Example.release.xcconfig */,
 			);
 			name = "Pods-ZWSlideViewController_Example";
 			path = "Target Support Files/Pods-ZWSlideViewController_Example";
 			sourceTree = "<group>";
 		};
-		A6C25B2C8E4DA60BB45E6C99 /* Frameworks */ = {
+		EDCA4DBD1055F2ABDA5BA7EC1FF7D67A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA3BAB8FA724261AE951C25C /* iOS */,
+				3CFEDBDD228A0013A111F96AD4DE03EE /* Pods_ZWSlideViewController_Example.framework */,
+				387DF0908872D8F4D01B328C09950F31 /* ZWSlideViewController.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		AA3BAB8FA724261AE951C25C /* iOS */ = {
+		F0F5428469035A3D3B4376D32F7A43B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				53B2148D32B762198D096B73 /* Foundation.framework */,
+				F219362CE56B2D6EE017E4EC178B2E0C /* ZWSlideViewController */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		E6676DD2D386E3ABF3E1E3A3 /* Targets Support Files */ = {
+		F219362CE56B2D6EE017E4EC178B2E0C /* ZWSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A0240250B495671F3B4D8043 /* Pods-ZWSlideViewController_Example */,
+				F14342D03A042A62932F20D77A0F59B8 /* ZWSFlowMenu.h */,
+				5985A0EF356D5F8CEEA8CF62BE744913 /* ZWSFlowMenu.m */,
+				7632BAF434F13A6F8F23C3EE27AAAE66 /* ZWSMenuLabel.h */,
+				23B3BC89AE6DEBDBA68EF3FAC8991A95 /* ZWSMenuLabel.m */,
+				7EDA6A9D028F3149A07D7DF45ABE5CCE /* ZWSPagingView.h */,
+				7E6A2233917C6CFA1C0D71EA23320921 /* ZWSPagingView.m */,
+				8D865D2A183CC15246F0B91CC18C01D6 /* ZWSSectionBar.h */,
+				A5A06AF584293A8B3624E731CAA44890 /* ZWSSectionBar.m */,
+				7F893D6C28F5B828E2DB62075A5633E9 /* ZWSViewController.h */,
+				4A73553A991CE9CECFB586708FE0F287 /* ZWSViewController.m */,
+				7B31D98EF37F1951F1A0E0CB03FA0A76 /* Support Files */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E80503EF4E0D7C3F8A823A51 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				25A25293256B63B05B0B08F4 /* ZWSFlowMenu.h */,
-				C9D327D44A5A22554531CE13 /* ZWSFlowMenu.m */,
-				2C4CDC22B05853381C3FA87D /* ZWSMenuLabel.h */,
-				453A4F6D3008D9DD4114CB3A /* ZWSMenuLabel.m */,
-				85BA0F777B993CC1935A727B /* ZWSPagingView.h */,
-				A4A361674FBB2F68132F0693 /* ZWSPagingView.m */,
-				CC2EEBF976A9980459E21B4A /* ZWSSectionBar.h */,
-				C35A65A3679CB1A607EA3204 /* ZWSSectionBar.m */,
-				C698DA9F4B49B248D91E620D /* ZWSViewController.h */,
-				60C88CCE080E6E510BAD261E /* ZWSViewController.m */,
-			);
-			path = Classes;
+			name = ZWSlideViewController;
+			path = ZWSlideViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		47DE2AEBD7434C086225CD9F /* Headers */ = {
+		9EA1B5BE16DEB72C8890EBC86D3E06AE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430DC4C3CFF3D2FF1AC9269A /* Pods-ZWSlideViewController_Example-ZWSlideViewController-umbrella.h in Headers */,
-				766B794BA872A9D94A54626F /* ZWSFlowMenu.h in Headers */,
-				94B77F2B5CF9B08438F529CF /* ZWSMenuLabel.h in Headers */,
-				48242F9E8DC975BD674F8243 /* ZWSPagingView.h in Headers */,
-				657B0725672112337241BFFD /* ZWSSectionBar.h in Headers */,
-				41329BE7B0A80D2BE306F6DC /* ZWSViewController.h in Headers */,
+				0080B06A0ADBBC9D271E793A6E1055A9 /* ZWSFlowMenu.h in Headers */,
+				9A89048F0DBF0C4740D6E5007A5DBDC7 /* ZWSlideViewController-umbrella.h in Headers */,
+				35D1D2B5134C078F848A20D61E1E9292 /* ZWSMenuLabel.h in Headers */,
+				B2503BE21211A009BBAF25D0EADF641D /* ZWSPagingView.h in Headers */,
+				F7FFE85986DB28266B1DDFACA0504BCC /* ZWSSectionBar.h in Headers */,
+				0C559C7E1CA3E0D9352CF83E226E3DA3 /* ZWSViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F251F58F3E973EF7A797934 /* Headers */ = {
+		A0FB7164951818A9D783DBB8FCC99D41 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB82E1E8D351963AC108E79E /* Pods-ZWSlideViewController_Example-umbrella.h in Headers */,
+				3C5CFADCCFD5317943ABFAC22FBDE191 /* Pods-ZWSlideViewController_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		097EBB19548294B1106CBBD3 /* Pods-ZWSlideViewController_Example-ZWSlideViewController */ = {
+		078F5F2608D5624A602C00994E29ED72 /* ZWSlideViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA633EC9F0116EBC1DFC17C1 /* Build configuration list for PBXNativeTarget "Pods-ZWSlideViewController_Example-ZWSlideViewController" */;
+			buildConfigurationList = E194601290FD78467A5FB3B601DF2F5A /* Build configuration list for PBXNativeTarget "ZWSlideViewController" */;
 			buildPhases = (
-				55D1F94DE6F1051B5968C196 /* Sources */,
-				57632509F691943D21BF5F26 /* Frameworks */,
-				47DE2AEBD7434C086225CD9F /* Headers */,
+				0A25F6CDF084F1C98CDB1E210553B84F /* Sources */,
+				E0EB1A96E917F21395FFD05AD436C9AC /* Frameworks */,
+				9EA1B5BE16DEB72C8890EBC86D3E06AE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ZWSlideViewController_Example-ZWSlideViewController";
-			productName = "Pods-ZWSlideViewController_Example-ZWSlideViewController";
-			productReference = D4C48B332DAC41E441E82B3B /* ZWSlideViewController.framework */;
+			name = ZWSlideViewController;
+			productName = ZWSlideViewController;
+			productReference = 387DF0908872D8F4D01B328C09950F31 /* ZWSlideViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		75081CBFF42145C91D3FFB3A /* Pods-ZWSlideViewController_Example */ = {
+		7F8D6468BE9C0655CB69F214FC10DB76 /* Pods-ZWSlideViewController_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 306310254A635637275F4489 /* Build configuration list for PBXNativeTarget "Pods-ZWSlideViewController_Example" */;
+			buildConfigurationList = C9C550CD8490BEC1550913F915322908 /* Build configuration list for PBXNativeTarget "Pods-ZWSlideViewController_Example" */;
 			buildPhases = (
-				F3F6F33C7E71CC1964A3E642 /* Sources */,
-				0E18EF01D070345154913AC8 /* Frameworks */,
-				9F251F58F3E973EF7A797934 /* Headers */,
+				3F5F6A87FB0939934D3D4B14B9CF7BB5 /* Sources */,
+				117B223D0F0D41789A0446DB40F2CB5C /* Frameworks */,
+				A0FB7164951818A9D783DBB8FCC99D41 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9C397CF40C6E79A2CD377658 /* PBXTargetDependency */,
+				9EF73AA8D370E83FD489433D2D8859DB /* PBXTargetDependency */,
 			);
 			name = "Pods-ZWSlideViewController_Example";
 			productName = "Pods-ZWSlideViewController_Example";
-			productReference = 5371EFAB294D980A4C74FB35 /* Pods_ZWSlideViewController_Example.framework */;
+			productReference = 3CFEDBDD228A0013A111F96AD4DE03EE /* Pods_ZWSlideViewController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BBA7BB3E215DD914908AB045 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 9AC409EBD3936AE1BDA65463 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4412495509342F364922AFE0;
-			productRefGroup = 0DCBBD5B6691AFD8F07234DF /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EDCA4DBD1055F2ABDA5BA7EC1FF7D67A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75081CBFF42145C91D3FFB3A /* Pods-ZWSlideViewController_Example */,
-				097EBB19548294B1106CBBD3 /* Pods-ZWSlideViewController_Example-ZWSlideViewController */,
+				7F8D6468BE9C0655CB69F214FC10DB76 /* Pods-ZWSlideViewController_Example */,
+				078F5F2608D5624A602C00994E29ED72 /* ZWSlideViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		55D1F94DE6F1051B5968C196 /* Sources */ = {
+		0A25F6CDF084F1C98CDB1E210553B84F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4ACDFEE64C65A94323409BA /* Pods-ZWSlideViewController_Example-ZWSlideViewController-dummy.m in Sources */,
-				A51E8E432C7A11681EE2D898 /* ZWSFlowMenu.m in Sources */,
-				7C047A0506627036F6787C3C /* ZWSMenuLabel.m in Sources */,
-				2F5EF785403DB04512F60D82 /* ZWSPagingView.m in Sources */,
-				AC0B085EC99654596D011466 /* ZWSSectionBar.m in Sources */,
-				D6FC5BC2963856E10404A4D6 /* ZWSViewController.m in Sources */,
+				85898D28D49A0A36E199480FF3907290 /* ZWSFlowMenu.m in Sources */,
+				5EE33E0D3085F48DAA4E1BD5C2038220 /* ZWSlideViewController-dummy.m in Sources */,
+				530B8A7A2ED75F02979E02EF2020667A /* ZWSMenuLabel.m in Sources */,
+				720F4925B9B8C4BEB4CC59D82D292E03 /* ZWSPagingView.m in Sources */,
+				600334FABDD3406097EA9840DF620069 /* ZWSSectionBar.m in Sources */,
+				20AB46C960B368FEEF41FE598FD64CDD /* ZWSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3F6F33C7E71CC1964A3E642 /* Sources */ = {
+		3F5F6A87FB0939934D3D4B14B9CF7BB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A78EAF129F9B5D0CE9C79180 /* Pods-ZWSlideViewController_Example-dummy.m in Sources */,
+				7D41D0BFA1453DE1E08AAAC8E74A3E1C /* Pods-ZWSlideViewController_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9C397CF40C6E79A2CD377658 /* PBXTargetDependency */ = {
+		9EF73AA8D370E83FD489433D2D8859DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-ZWSlideViewController_Example-ZWSlideViewController";
-			target = 097EBB19548294B1106CBBD3 /* Pods-ZWSlideViewController_Example-ZWSlideViewController */;
-			targetProxy = 53EAF39474C650393A1DF30B /* PBXContainerItemProxy */;
+			name = ZWSlideViewController;
+			target = 078F5F2608D5624A602C00994E29ED72 /* ZWSlideViewController */;
+			targetProxy = 34D0AFA689D82DEDEF1B032D470EC0AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1318DFDD1B937628A0DE8B10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63FD600AEFECD1DFC189B9BB /* Pods-ZWSlideViewController_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Pods-ZWSlideViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ZWSlideViewController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3D8613858F909BDE2C7F9439 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73F0BF724B50A06103633F66 /* Pods-ZWSlideViewController_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Pods-ZWSlideViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ZWSlideViewController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7593D0E293786AC3BEB5014B /* Debug */ = {
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -402,17 +327,23 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -423,71 +354,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		8C6E5F99FACA7C462160FE30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43B96A458CD61A43F76903EE /* Pods-ZWSlideViewController_Example-ZWSlideViewController-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController/Pods-ZWSlideViewController_Example-ZWSlideViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController/Pods-ZWSlideViewController_Example-ZWSlideViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ZWSlideViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BECC2CFAB4525138568B20B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43B96A458CD61A43F76903EE /* Pods-ZWSlideViewController_Example-ZWSlideViewController-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController/Pods-ZWSlideViewController_Example-ZWSlideViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ZWSlideViewController_Example-ZWSlideViewController/Pods-ZWSlideViewController_Example-ZWSlideViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ZWSlideViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E1BE3DF154AB9AAE62D4AE80 /* Release */ = {
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -495,60 +376,206 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
+		4C2A7938BF48AC9845131D724C2140EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E0D52016E8190D3573CFE38005C687 /* Pods-ZWSlideViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Pods-ZWSlideViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZWSlideViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2609DB5B9B8D9591FD94BE90DB31C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5224412C51B8144A86F40ABF928E5D4 /* ZWSlideViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZWSlideViewController/ZWSlideViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZWSlideViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZWSlideViewController/ZWSlideViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZWSlideViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0FC6C14B7BD7442EE0311DBE3EDE188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5224412C51B8144A86F40ABF928E5D4 /* ZWSlideViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZWSlideViewController/ZWSlideViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZWSlideViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZWSlideViewController/ZWSlideViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZWSlideViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7BD21893801A3558D5BDE15D66F42C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA31EBA1DDF29F64DF5DBC0673678F2C /* Pods-ZWSlideViewController_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZWSlideViewController_Example/Pods-ZWSlideViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZWSlideViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		306310254A635637275F4489 /* Build configuration list for PBXNativeTarget "Pods-ZWSlideViewController_Example" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1318DFDD1B937628A0DE8B10 /* Debug */,
-				3D8613858F909BDE2C7F9439 /* Release */,
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AC409EBD3936AE1BDA65463 /* Build configuration list for PBXProject "Pods" */ = {
+		C9C550CD8490BEC1550913F915322908 /* Build configuration list for PBXNativeTarget "Pods-ZWSlideViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7593D0E293786AC3BEB5014B /* Debug */,
-				E1BE3DF154AB9AAE62D4AE80 /* Release */,
+				4C2A7938BF48AC9845131D724C2140EA /* Debug */,
+				F7BD21893801A3558D5BDE15D66F42C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA633EC9F0116EBC1DFC17C1 /* Build configuration list for PBXNativeTarget "Pods-ZWSlideViewController_Example-ZWSlideViewController" */ = {
+		E194601290FD78467A5FB3B601DF2F5A /* Build configuration list for PBXNativeTarget "ZWSlideViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C6E5F99FACA7C462160FE30 /* Debug */,
-				BECC2CFAB4525138568B20B4 /* Release */,
+				D0FC6C14B7BD7442EE0311DBE3EDE188 /* Debug */,
+				A2609DB5B9B8D9591FD94BE90DB31C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BBA7BB3E215DD914908AB045 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }
